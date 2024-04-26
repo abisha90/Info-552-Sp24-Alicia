@@ -347,7 +347,7 @@ ul li {
     Typography
 ============= */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-optical-sizing: auto;
 }
 
@@ -431,34 +431,21 @@ ul li a {
 /* =============
     Index
 ============= */
-#index-hero {
-  margin: 32px 0;
+#index-philosophy {
+  margin: 32px 8px;
   text-align: center;
 }
-#index-hero > div {
-  padding: 0 16px;
+#index-philosophy p {
+  padding: 16px;
 }
-@media (min-width: 768px) {
-  #index-hero > div {
-    padding: 0 56px;
-  }
-}
-#index-hero > div p {
-  font-size: 1.125rem;
-  color: var(--blue);
-  line-height: 1.5rem;
-}
-#index-hero > div button {
-  margin: 32px 0;
-}
-#index-hero #index-hero-image {
+#index-philosophy #index-philosophy-image {
   height: 70vh;
-  background-image: url("../img/home/hero.jpg");
+  background-image: url("../img/Phonebooth.jpg");
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 768px) {
-  #index-hero #index-hero-image {
+  #index-philosophy #index-philosophy-image {
     height: 60vh;
   }
 }

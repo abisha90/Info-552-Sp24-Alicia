@@ -2,30 +2,18 @@
     Index
 ============= */
 
-#index-hero{
-    margin: 32px 0;
+#index-philosophy{
+    margin: 32px 8px;
     text-align: center;
-    >div{
-        padding: 0 16px;
 
-        @include md{
-            padding: 0 56px;
-        }
-
-        p{
-            font-size: rem-calc(18);
-            color: var(--blue);
-            line-height: rem-calc(24);
-        }
-
-        button{
-            margin: 32px 0;
-        }
+    p{
+        padding: 16px;
     }
 
-    #index-hero-image{
+
+    #index-philosophy-image{
         height: 70vh;
-        background-image: url('../img/home/hero.jpg');
+        background-image: url('../img/Phonebooth.jpg');
         background-size: cover;
         // x = right | center | left
         // y = top | center | bottom
