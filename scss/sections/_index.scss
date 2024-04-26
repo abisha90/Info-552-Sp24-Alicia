@@ -1,0 +1,38 @@
+/* =============
+    Index
+============= */
+
+#index-hero{
+    margin: 32px 0;
+    text-align: center;
+    >div{
+        padding: 0 16px;
+
+        @include md{
+            padding: 0 56px;
+        }
+
+        p{
+            font-size: rem-calc(18);
+            color: var(--blue);
+            line-height: rem-calc(24);
+        }
+
+        button{
+            margin: 32px 0;
+        }
+    }
+
+    #index-hero-image{
+        height: 70vh;
+        background-image: url('../img/home/hero.jpg');
+        background-size: cover;
+        // x = right | center | left
+        // y = top | center | bottom
+        background-position: center;
+
+        @include md{
+            height: 60vh;
+        }
+    }
+}

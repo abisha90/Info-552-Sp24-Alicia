@@ -423,3 +423,42 @@ textarea {
 /* =============
     Footer
 ============= */
+ul li a {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+/* =============
+    Index
+============= */
+#index-hero {
+  margin: 32px 0;
+  text-align: center;
+}
+#index-hero > div {
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  #index-hero > div {
+    padding: 0 56px;
+  }
+}
+#index-hero > div p {
+  font-size: 1.125rem;
+  color: var(--blue);
+  line-height: 1.5rem;
+}
+#index-hero > div button {
+  margin: 32px 0;
+}
+#index-hero #index-hero-image {
+  height: 70vh;
+  background-image: url("../img/home/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #index-hero #index-hero-image {
+    height: 60vh;
+  }
+}
