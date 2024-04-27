@@ -349,6 +349,7 @@ ul li {
 body {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
