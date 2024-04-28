@@ -432,12 +432,15 @@ footer {
   background-position: center bottom;
   color: var(--white);
   text-align: center;
-  height: 60vh;
+  height: 50vh;
 }
 footer ul {
-  -webkit-box-flex: content;
-      -ms-flex: content;
-          flex: content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 footer ul li a {
   color: var(--white);
