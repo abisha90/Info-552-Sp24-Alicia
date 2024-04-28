@@ -13,7 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --slateBlueDark: #483D8B;
+  --midnightShade: #5e5e9b;
   --blueMidnight: #191970;
 }
 
@@ -520,10 +520,18 @@ footer ul li a {
   text-align: center;
   padding-bottom: 16px;
 }
-#my-resume > div .blueButton {
-  text-align: center;
-  display: block;
-  margin: auto;
+#my-resume > div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 1.5em;
+  background-color: var(--midnightShade);
+  color: var(--white);
+  margin: 16px 64px;
+  border-radius: 12px;
 }
 #my-resume h2 {
   text-align: center;

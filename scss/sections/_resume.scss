@@ -11,10 +11,14 @@
             padding-bottom: 16px;
         }
     
-        .blueButton{
-            text-align: center;
-            display: block;
-            margin: auto;
+        a{
+            display: flex;
+            justify-content: center;
+            padding: 1em 1.5em;
+            background-color: var(--midnightShade);
+            color: var(--white);
+            margin: 16px 64px;
+            border-radius: 12px;
 
         }
     }
