@@ -397,6 +397,20 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.blueButton {
+  background-color: var(--slateBlueDark);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: 8px;
+}
+
 /* =============
     Forms
 ============= */
@@ -502,6 +516,9 @@ footer ul li a {
 }
 #my-resume h1 {
   color: var(--blueMidnight);
+  text-align: center;
+}
+#my-resume button {
   text-align: center;
 }
 #my-resume h2 {
