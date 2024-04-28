@@ -497,6 +497,22 @@ footer ul li a {
 /* =============
     Resume
 ============= */
+#my-resume {
+  padding-bottom: 16px;
+}
 #my-resume h1 {
   color: var(--blueMidnight);
+  text-align: center;
+}
+#my-resume h2 {
+  text-align: center;
+}
+#my-resume p {
+  text-align: center;
+}
+#my-resume h3 {
+  padding-top: 32px;
+}
+#my-resume ul li {
+  padding-top: 8px;
 }

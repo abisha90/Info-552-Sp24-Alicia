@@ -3,12 +3,27 @@
 ============= */
 
 #my-resume{
+    padding-bottom: 16px;
     h1{
         color: var(--blueMidnight);
+        text-align: center;
 
     }
 
-    #my-education{
-        
+    h2{
+        text-align: center;
     }
-}
+    p{
+        text-align: center;
+    }
+
+    h3{
+            padding-top: 32px;
+        }
+        ul{
+            li{
+                padding-top: 8px;
+            }
+        }
+    }
+
