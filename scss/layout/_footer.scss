@@ -9,9 +9,8 @@ footer{
     text-align: center;
     height: 60vh;
 
-
-
 ul{
+    flex: content;
 
     li{
        a{
@@ -21,3 +20,4 @@ ul{
     }
 }
 
+}
