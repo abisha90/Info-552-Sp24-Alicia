@@ -2,14 +2,15 @@
     Footer
 ============= */
 h2{
-
+    text-align: center;
+    color: var(--blueMidnight);
 }
 
 ul{
     li{
        a{
         color: var(--black); 
-        font-size: rem-calc(40);
+        font-size: rem-calc(20);
        }   
     }
 }
