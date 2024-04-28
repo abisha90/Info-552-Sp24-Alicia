@@ -4,21 +4,24 @@
 
 #my-resume{
     padding-bottom: 16px;
-    h1{
-        color: var(--blueMidnight);
-        text-align: center;
+    >div{
+        h1{
+            color: var(--blueMidnight);
+            text-align: center;
+            padding-bottom: 16px;
+        }
+    
+        .blueButton{
+            text-align: center;
+            display: block;
+            margin: auto;
 
-    }
-
-    button{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-
+        }
     }
 
     h2{
         text-align: center;
+        padding-top: 16px;
     }
     p{
         text-align: center;

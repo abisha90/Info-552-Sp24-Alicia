@@ -409,6 +409,7 @@ button {
   font-weight: 800;
   padding: 16px 40px;
   border-radius: 8px;
+  margin: auto;
 }
 
 /* =============
@@ -514,21 +515,19 @@ footer ul li a {
 #my-resume {
   padding-bottom: 16px;
 }
-#my-resume h1 {
+#my-resume > div h1 {
   color: var(--blueMidnight);
   text-align: center;
+  padding-bottom: 16px;
 }
-#my-resume button {
+#my-resume > div .blueButton {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
+  margin: auto;
 }
 #my-resume h2 {
   text-align: center;
+  padding-top: 16px;
 }
 #my-resume p {
   text-align: center;
