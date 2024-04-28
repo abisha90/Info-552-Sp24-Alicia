@@ -1,0 +1,36 @@
+/* =============
+    About
+============= */
+#about-me{
+    h1{
+        padding: 16px 0 8px;
+        color: var(--blueMidnight);
+        text-align: center;
+    }
+    p{
+
+    }
+}
+
+
+#life-in-links{
+    padding-bottom: 16px;
+
+    h1{
+        padding-top: 16px;
+        color: var(--blueMidnight);
+        text-align: center;
+    }
+
+    ul{
+        text-align: center;
+        li{
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        p{
+            font-style: italic;
+        }
+    
+    }
+}
