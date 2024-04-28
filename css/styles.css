@@ -493,3 +493,10 @@ footer ul li a {
 #life-in-links ul p {
   font-style: italic;
 }
+
+/* =============
+    Resume
+============= */
+#my-resume h1 {
+  color: var(--blueMidnight);
+}
