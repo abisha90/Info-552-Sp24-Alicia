@@ -4,28 +4,30 @@
 footer{
     background-image: url("../img/footerbookshelf.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     color: var(--white);
     text-align: center;
-    height: 60vh;
+    height: 50vh;
 
     // display: flex;
     // justify-content: center;
     // align-items: flex-end;
-h2{
-
-}
-
-ul{
-    padding-top: 250px;
 
 >div{
-    li{
-       a{
-        color: var(--white); 
-        font-size: rem-calc(20);
-       }   
+    ul{
+        padding-top: 250px;
+        padding: 32px 6vw 16px;
+        display: flex;
+        justify-content: space-between;
+        li{
+    
+           a{
+            color: var(--white); 
+            font-size: rem-calc(20);
+           }   
+        }
     }
+
 }
 
 }

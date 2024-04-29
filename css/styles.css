@@ -444,15 +444,22 @@ textarea {
 footer {
   background-image: url("../img/footerbookshelf.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   color: var(--white);
   text-align: center;
-  height: 60vh;
+  height: 50vh;
 }
-footer ul {
+footer > div ul {
   padding-top: 250px;
+  padding: 32px 6vw 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-footer ul li a {
+footer > div ul li a {
   color: var(--white);
   font-size: 1.25rem;
 }
@@ -464,7 +471,7 @@ footer ul li a {
   margin: 32px 8px;
   text-align: center;
 }
-#index-philosophy h2 {
+#index-philosophy h1 {
   color: var(--blueMidnight);
 }
 #index-philosophy p {
@@ -490,6 +497,10 @@ footer ul li a {
   color: var(--blueMidnight);
   text-align: center;
 }
+#about-me p {
+  padding: 8px;
+}
+
 #life-in-links {
   padding-bottom: 16px;
 }
@@ -545,4 +556,12 @@ footer ul li a {
 }
 #my-resume ul li {
   padding-top: 8px;
+}
+
+/* =============
+    Projects
+============= */
+#cw-p h1 {
+  color: var(--blueMidnight);
+  text-align: center;
 }
