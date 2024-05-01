@@ -511,6 +511,8 @@ footer > div ul li a {
 }
 #life-in-links ul {
   text-align: center;
+  background-color: var(--midnightShade);
+  color: var(--white);
 }
 #life-in-links ul li {
   padding-top: 8px;
