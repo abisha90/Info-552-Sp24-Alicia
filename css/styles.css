@@ -13,8 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --midnightShade: #5e5e9b;
-  --blueMidnight: #191970;
+  --carafe: #774A62;
+  --salmon: #FBD2C9;
+  --blueNavy: #313E61;
+  --blueMisty: #81ABBC;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -493,20 +495,69 @@ footer > div ul li a {
     About
 ============= */
 #about-me h1 {
-  padding: 16px 0 8px;
-  color: var(--blueMidnight);
+  padding: 16px 0 16px 0;
+  color: var(--blueNavy);
   text-align: center;
 }
-#about-me p {
-  padding: 8px;
+#about-me ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 8vh 8px 8vh 8px 8vh 8px 12vh;
+  grid-template-rows: 8vh 8vh 8vh 12vh;
+  gap: 8px;
+      grid-template-areas: "bio1 bio1" "bio2 bio2" "bio3 bio3" "bio4 bio4";
+}
+#about-me li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+#about-me #bio1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: bio1;
+  background-color: var(--salmon);
+  font-style: italic;
+  border-radius: 8px;
+}
+#about-me #bio2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: bio2;
+  background-color: var(--blueMisty);
+  font-style: italic;
+  border-radius: 8px;
+}
+#about-me #bio3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: bio3;
+  background-color: var(--salmon);
+  font-style: italic;
+  border-radius: 8px;
+}
+#about-me #bio4 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: bio4;
+  background-color: var(--blueMisty);
+  font-style: italic;
+  border-radius: 8px;
 }
 
-#life-in-links {
-  padding-bottom: 16px;
-}
 #life-in-links h1 {
-  padding-top: 16px;
-  color: var(--blueMidnight);
+  padding: 32px 0 16px 0;
+  color: var(--blueNavy);
   text-align: center;
 }
 #life-in-links ul {
@@ -514,9 +565,10 @@ footer > div ul li a {
   display: grid;
   -ms-grid-columns: 1fr 8px 1fr;
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh;
+  grid-template-rows: repeat(8, 8vh);
   gap: 8px;
-  -ms-grid-rows: auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto;
-      grid-template-areas: "acsm msm" "bpo bpo" "dcci dcci" "dal dal" "flp flp" "ccd ccd" "singer singer";
+      grid-template-areas: "acsm acsm" "msm msm" "bpo bpo" "dcci dcci" "dal dal" "flp flp" "ccd ccd" "singer singer";
 }
 #life-in-links ul li {
   display: -webkit-box;
@@ -526,29 +578,57 @@ footer > div ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: var(--blueMidnight);
 }
 #life-in-links ul #acsm {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: acsm;
+  color: var(--white);
+  background-color: var(--carafe);
+  border-radius: 8px;
 }
 #life-in-links ul #msm {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: msm;
 }
 #life-in-links ul #bpo {
-  -ms-grid-row: 3;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: bpo;
 }
 #life-in-links ul #dcci {
-  -ms-grid-row: 5;
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: dcci;
+}
+#life-in-links ul #dal {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: dal;
+}
+#life-in-links ul #flp {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: flp;
+}
+#life-in-links ul #ccd {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ccd;
+}
+#life-in-links ul #singer {
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: singer;
 }
 
 /* =============

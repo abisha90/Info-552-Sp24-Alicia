@@ -2,23 +2,68 @@
     About
 ============= */
 #about-me{
+
     h1{
-        padding: 16px 0 8px;
-        color: var(--blueMidnight);
+    padding: 16px 0 16px 0;
+        color: var(--blueNavy);
         text-align: center;
     }
-    p{
-        padding: 8px;
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 8vh 8vh 8vh 12vh;
+        gap: 8px;
+
+        grid-template-areas:
+        "bio1 bio1"
+        "bio2 bio2"
+        "bio3 bio3"
+        "bio4 bio4";
     }
+
+    li{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #bio1{
+        grid-area: bio1;
+        background-color: var(--salmon);
+        font-style: italic;
+        border-radius: 8px;
+    }
+
+    #bio2{
+        grid-area: bio2;
+        background-color: var(--blueMisty);
+        font-style: italic;
+        border-radius: 8px;
+
+    }
+
+    #bio3{
+        grid-area: bio3;
+        background-color: var(--salmon);
+        font-style: italic;
+        border-radius: 8px;
+    }
+
+    #bio4{
+        grid-area: bio4;
+        background-color: var(--blueMisty);
+        font-style: italic;
+        border-radius: 8px;
+    }
+
 }
 
-
 #life-in-links{
-    padding-bottom: 16px;
-
+    
     h1{
-        padding-top: 16px;
-        color: var(--blueMidnight);
+        padding: 32px 0 16px 0;
+        color: var(--blueNavy);
         text-align: center;
     }
 
@@ -26,10 +71,12 @@
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 8vh);
         gap: 8px;
 
         grid-template-areas:
-        "acsm msm"
+        "acsm acsm"
+        "msm msm"
         "bpo bpo"
         "dcci dcci"
         "dal dal"
@@ -41,11 +88,13 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        background-color: var(--blueMidnight);
 
     }
     #acsm{
         grid-area: acsm;
+        color: var(--white);
+        background-color: var(--carafe);
+        border-radius: 8px;
     }
     #msm{
         grid-area: msm;
@@ -59,5 +108,20 @@
         grid-area: dcci;
     }
 
+    #dal{
+        grid-area: dal;
+    }
+
+    #flp{
+        grid-area: flp;
+    }
+
+    #ccd{
+        grid-area: ccd;
+    }
+
+    #singer{
+        grid-area: singer;
+    }
     }
 }
