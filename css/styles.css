@@ -513,19 +513,14 @@ footer > div ul li a {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 8px 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
   gap: 8px;
-      grid-template-areas: li;
-  grid-template-areas-padding-top: 8px;
-  grid-template-areas-padding-bottom: 8px;
-  grid-template-areas-background-color: var(--midnightShade);
+      grid-template-areas: "acsm" "msm" "bpo" "dcci" "dal" "flp" "ccd" "singer";
 }
 #life-in-links ul p {
   font-style: italic;
-  background-color: var(--midnightShade);
 }
-
 /* =============
     Resume
 ============= */

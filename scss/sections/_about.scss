@@ -26,25 +26,32 @@
         text-align: center;
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        // grid-template-columns: repeat(2, 1fr);
         gap: 8px;
 
         grid-template-areas:
+        "acsm"
+        "msm"
+        "bpo"
+        "dcci"
+        "dal"
+        "flp"
+        "ccd"
+        "singer";
 
         
 
         li{
-            padding-top: 8px;
-            padding-bottom: 8px;
-            background-color: var(--midnightShade);
-
-
+            // padding-top: 8px;
+            // padding-bottom: 8px;
         }
         p{
             font-style: italic;
-            background-color: var(--midnightShade);
         }
-
+    #acsm{
+        
+    }
 
     
     }
