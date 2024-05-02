@@ -516,64 +516,14 @@ footer > div ul li a {
   -ms-grid-columns: 1fr 8px 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
-  -ms-grid-rows: auto 8px auto 8px auto 8px auto 8px auto 8px auto;
-      grid-template-areas: "acsm msm" "acsmsub msmsub" "bpo bpo" "dcci dcci" "dal flp" "ccd singer";
-}
-#life-in-links ul li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: var(--midnightShade);
+      grid-template-areas: li;
+  grid-template-areas-padding-top: 8px;
+  grid-template-areas-padding-bottom: 8px;
+  grid-template-areas-background-color: var(--midnightShade);
 }
 #life-in-links ul p {
   font-style: italic;
   background-color: var(--midnightShade);
-}
-#life-in-links ul #acsm {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: acsm;
-}
-#life-in-links ul #acsmsub {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: acsmsub;
-}
-#life-in-links ul #msm {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: msm;
-}
-#life-in-links ul #bpo {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: bpo;
-}
-#life-in-links ul #dcci {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: dcci;
-}
-#life-in-links ul #dal {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  grid-area: dal;
-}
-#life-in-links ul #flp {
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
-  grid-area: flp;
-}
-#life-in-links ul #ccd {
-  -ms-grid-row: 11;
-  -ms-grid-column: 1;
-  grid-area: ccd;
-}
-#life-in-links ul #singer {
-  -ms-grid-row: 11;
-  -ms-grid-column: 3;
-  grid-area: singer;
 }
 
 /* =============

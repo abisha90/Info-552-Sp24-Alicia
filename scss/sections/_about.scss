@@ -25,19 +25,12 @@
     ul{
         text-align: center;
 
-
         display: grid;
-        grid-template-rows: ;
-        // grid-template-columns: repeat(2, 1fr);
-        // gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
 
-        // grid-template-areas:
-        // "acsm msm"
-        // "acsmsub msmsub"
-        // "bpo bpo"
-        // "dcci dcci"
-        // "dal flp"
-        // "ccd singer";
+        grid-template-areas:
+
         
 
         li{
@@ -52,41 +45,7 @@
             background-color: var(--midnightShade);
         }
 
-        #acsm{
-            grid-area: acsm;
-        }
 
-        #acsmsub{
-            grid-area: acsmsub;
-        }
-
-        #msm{
-            grid-area: msm;
-        }
-
-        #bpo{
-            grid-area: bpo;
-        }
-
-        #dcci{
-            grid-area: dcci;
-        }
-
-        #dal{
-            grid-area: dal;
-        }
-
-        #flp{
-            grid-area: flp;
-        }
-
-        #ccd{
-            grid-area: ccd;
-        }
-
-        #singer{
-            grid-area: singer;
-        }
     
     }
 }
