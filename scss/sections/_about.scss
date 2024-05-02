@@ -22,7 +22,7 @@
         text-align: center;
     }
 
-    ul{
+    #8-links{
         text-align: center;
 
         display: grid;
@@ -42,13 +42,13 @@
 
         
 
-        li{
-            // padding-top: 8px;
-            // padding-bottom: 8px;
-        }
-        p{
-            font-style: italic;
-        }
+        // li{
+        //     // padding-top: 8px;
+        //     // padding-bottom: 8px;
+        // }
+        // p{
+        //     font-style: italic;
+        // }
     #acsm{
         grid-area: acsm;
         background-color: var(--midnightShade);
