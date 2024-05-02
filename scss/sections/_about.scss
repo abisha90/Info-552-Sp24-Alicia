@@ -27,18 +27,17 @@
 
         display: grid;
 
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
 
         grid-template-areas:
-        "acsm"
-        "msm"
-        "bpo"
-        "dcci"
-        "dal"
-        "flp"
-        "ccd"
-        "singer";
+        "acsm msm"
+        "bpo bpo"
+        "dcci dcci"
+        "dal dal"
+        "flp flp"
+        "ccd ccd"
+        "singer singer";
 
         
 
