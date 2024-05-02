@@ -23,10 +23,8 @@
     }
 
     ul{
-        text-align: center;
 
         display: grid;
-
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
 
@@ -39,23 +37,27 @@
         "ccd ccd"
         "singer singer";
 
-        
+    li{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--blueMidnight);
 
-        // li{
-        //     // padding-top: 8px;
-        //     // padding-bottom: 8px;
-        // }
-        // p{
-        //     font-style: italic;
-        // }
+    }
     #acsm{
         grid-area: acsm;
-
-        
+    }
+    #msm{
+        grid-area: msm;
     }
 
-    #
+    #bpo{
+        grid-area: bpo;
+    }
 
-    
+    #dcci{
+        grid-area: dcci;
+    }
+
     }
 }

@@ -510,17 +510,47 @@ footer > div ul li a {
   text-align: center;
 }
 #life-in-links ul {
-  text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
+  -ms-grid-columns: 1fr 8px 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
-      grid-template-areas: "acsm" "msm" "bpo" "dcci" "dal" "flp" "ccd" "singer";
+  -ms-grid-rows: auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto;
+      grid-template-areas: "acsm msm" "bpo bpo" "dcci dcci" "dal dal" "flp flp" "ccd ccd" "singer singer";
 }
-#life-in-links ul p {
-  font-style: italic;
+#life-in-links ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: var(--blueMidnight);
 }
+#life-in-links ul #acsm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: acsm;
+}
+#life-in-links ul #msm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: msm;
+}
+#life-in-links ul #bpo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: bpo;
+}
+#life-in-links ul #dcci {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: dcci;
+}
+
 /* =============
     Resume
 ============= */
