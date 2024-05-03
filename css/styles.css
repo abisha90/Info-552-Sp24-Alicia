@@ -568,7 +568,7 @@ footer > div ul li a {
   -ms-grid-rows: 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh 8px 8vh;
   grid-template-rows: repeat(8, 8vh);
   gap: 8px;
-      grid-template-areas: "acsm acsm" "msm msm" "bpo bpo" "dcci dcci" "dal dal" "flp flp" "ccd ccd" "singer singer";
+      grid-template-areas: "acsm acsm1" "msm msm1" "bpo bpo1" "dcci dcci" "dal dal" "flp flp" "ccd ccd" "singer singer";
 }
 #life-in-links ul li {
   display: -webkit-box;
@@ -579,25 +579,33 @@ footer > div ul li a {
           justify-content: center;
   text-align: center;
 }
+#life-in-links ul li a {
+  color: var(--white);
+}
 #life-in-links ul #acsm {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: acsm;
   color: var(--white);
   background-color: var(--carafe);
   border-radius: 8px;
 }
+#life-in-links ul #acsm1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: acsm1;
+}
 #life-in-links ul #msm {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: msm;
+  color: var(--white);
+  background-color: var(--blueNavy);
+  border-radius: 8px;
 }
 #life-in-links ul #bpo {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: bpo;
 }
 #life-in-links ul #dcci {
@@ -605,6 +613,9 @@ footer > div ul li a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: dcci;
+  color: var(--white);
+  background-color: var(--blueNavy);
+  border-radius: 8px;
 }
 #life-in-links ul #dal {
   -ms-grid-row: 9;

@@ -75,9 +75,9 @@
         gap: 8px;
 
         grid-template-areas:
-        "acsm acsm"
-        "msm msm"
-        "bpo bpo"
+        "acsm acsm1"
+        "msm msm1"
+        "bpo bpo1"
         "dcci dcci"
         "dal dal"
         "flp flp"
@@ -89,6 +89,10 @@
         justify-content: center;
         text-align: center;
 
+        a{
+            color: var(--white);
+        }
+
     }
     #acsm{
         grid-area: acsm;
@@ -96,8 +100,15 @@
         background-color: var(--carafe);
         border-radius: 8px;
     }
+
+    #acsm1{
+        grid-area: acsm1;
+    }
     #msm{
         grid-area: msm;
+        color: var(--white);
+        background-color: var(--blueNavy);
+        border-radius: 8px;
     }
 
     #bpo{
@@ -106,6 +117,10 @@
 
     #dcci{
         grid-area: dcci;
+        color: var(--white);
+        background-color: var(--blueNavy);
+        border-radius: 8px;
+    
     }
 
     #dal{
