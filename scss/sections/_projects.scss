@@ -17,7 +17,7 @@
         font-style: italic;
     }
 
-    ul{
+    #course-list{
         margin-bottom: 32px;
         margin-left: 8px;
         display: grid;
@@ -241,6 +241,7 @@
     #info890a{
         grid-area: info890a;
         background-color: var(--carafe);
+        color: var(--white);
         border-radius: 8px;
     }
 
