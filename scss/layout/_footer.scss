@@ -13,25 +13,38 @@ footer{
     // justify-content: center;
     // align-items: flex-end;
 
-ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 16vh;
+    ul{
+        padding: 32px 6vw 16px;
+        display: flex;
+        justify-content: space-between;
 
-    grid-template-areas:
-    "footer1"
-    "footer2"
-    "footer3"
-    "footer4";
+        li{
+            a{
+                color: var(--white);     
+                font-size: rem-calc(20);
+            }
+        }
+    }
 
-}
+// ul{
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: 16vh;
 
-    #footer1{
-        grid-area: footer1;
-        color: var(--white);
+//     grid-template-areas:
+//     "footer1"
+//     "footer2"
+//     "footer3"
+//     "footer4";
+
+// }
+
+//     #footer1{
+//         grid-area: footer1;
+//         color: var(--white);
         
 
-    }
+//     }
 
 // >div{
 

@@ -452,19 +452,17 @@ footer {
   height: 50vh;
 }
 footer ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 16vh;
-  grid-template-rows: 16vh;
-      grid-template-areas: "footer1" "footer2" "footer3" "footer4";
+  padding: 32px 6vw 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-footer #footer1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: footer1;
+footer ul li a {
   color: var(--white);
+  font-size: 1.25rem;
 }
 
 /* =============
@@ -696,13 +694,14 @@ footer #footer1 {
 ============= */
 #my-resume {
   padding-bottom: 16px;
+  margin: 0 8px 0 8px;
 }
-#my-resume > div h1 {
-  color: var(--blueMidnight);
+#my-resume h1 {
+  color: var(--blueNavy);
   text-align: center;
   padding-bottom: 16px;
 }
-#my-resume > div a {
+#my-resume a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,7 +709,7 @@ footer #footer1 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1em 1.5em;
-  background-color: var(--midnightShade);
+  background-color: var(--carafe);
   color: var(--white);
   margin: 16px 64px;
   border-radius: 12px;
@@ -733,6 +732,7 @@ footer #footer1 {
     Projects
 ============= */
 #cw-p h1 {
-  color: var(--blueMidnight);
+  padding: 16px 0 16px 0;
+  color: var(--blueNavy);
   text-align: center;
 }
