@@ -978,14 +978,30 @@ footer ul li a {
   -ms-grid-row: 27;
   -ms-grid-column: 1;
   grid-area: info890;
-  background-color: var(--salmon);
+  background-color: var(--blueNavy);
   border-radius: 8px;
+}
+#cw-p #info890 a {
+  color: var(--white);
 }
 #cw-p #info890a {
   -ms-grid-row: 27;
   -ms-grid-column: 3;
   grid-area: info890a;
-  background-color: var(--carafe);
+  background-color: var(--blueNavy);
   color: var(--white);
   border-radius: 8px;
+}
+#cw-p #sample-work li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 1.5em;
+  background-color: var(--carafe);
+  color: var(--white);
+  margin: 16px 64px;
+  border-radius: 12px;
 }

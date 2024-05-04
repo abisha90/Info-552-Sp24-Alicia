@@ -234,15 +234,33 @@
 
     #info890{
         grid-area: info890;
-        background-color: var(--salmon);
+        background-color: var(--blueNavy);
+        a{
+            color: var(--white);
+        }
         border-radius: 8px;
     }
 
     #info890a{
         grid-area: info890a;
-        background-color: var(--carafe);
+        background-color: var(--blueNavy);
         color: var(--white);
         border-radius: 8px;
+    }
+
+    #sample-work{
+        li{
+            a{
+                display: flex;
+                justify-content: center;
+                padding: 1em 1.5em;
+                background-color: var(--carafe);
+                color: var(--white);
+                margin: 16px 64px;
+                border-radius: 12px;
+    
+            }
+        }
     }
 
 }
