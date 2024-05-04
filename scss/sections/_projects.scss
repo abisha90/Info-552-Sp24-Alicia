@@ -249,18 +249,52 @@
     }
 
     #sample-work{
+
+        margin: 0 8px 32px 8px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 8vh 8vh 8vh 8vh 32vh 8vh 8vh 8vh;
+        gap: 8px;
+
+        grid-template-areas:
+        "litpaper"
+        "litpaper1";
+
         li{
+            display: flex;
+            justify-content: center;
+   
             a{
-                display: flex;
-                justify-content: center;
-                padding: 1em 1.5em;
-                background-color: var(--carafe);
                 color: var(--white);
-                margin: 16px 64px;
-                border-radius: 12px;
-    
             }
         }
+
+        #litpaper{
+            grid-area: litpaper;
+            font-size: rem-calc(40);
+            background-color: var(--carafe);
+            border-radius: 12px;
+            margin: 8px 100px;
+            padding: 8px;
+
+        }
+
+        #litpaper1{
+            grid-area: litpaper1;
+        }
+
+        // li{
+        //     a{
+        //         display: flex;
+        //         justify-content: center;
+        //         padding: 1em 1.5em;
+        //         background-color: var(--carafe);
+        //         color: var(--white);
+        //         margin: 16px 64px;
+        //         border-radius: 12px;
+        //         font-size: rem-calc(40);
+        //     }
+        // }
     }
 
 }

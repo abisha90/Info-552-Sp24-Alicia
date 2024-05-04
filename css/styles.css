@@ -992,16 +992,40 @@ footer ul li a {
   color: var(--white);
   border-radius: 8px;
 }
-#cw-p #sample-work li a {
+#cw-p #sample-work {
+  margin: 0 8px 32px 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: 8vh 8px 8vh 8px 8vh 8px 8vh 8px 32vh 8px 8vh 8px 8vh 8px 8vh;
+  grid-template-rows: 8vh 8vh 8vh 8vh 32vh 8vh 8vh 8vh;
+  gap: 8px;
+      grid-template-areas: "litpaper" "litpaper1";
+}
+#cw-p #sample-work li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1em 1.5em;
-  background-color: var(--carafe);
+}
+#cw-p #sample-work li a {
   color: var(--white);
-  margin: 16px 64px;
+}
+#cw-p #sample-work #litpaper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: litpaper;
+  font-size: 2.5rem;
+  background-color: var(--carafe);
   border-radius: 12px;
+  margin: 8px 100px;
+  padding: 8px;
+}
+#cw-p #sample-work #litpaper1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: litpaper1;
 }
