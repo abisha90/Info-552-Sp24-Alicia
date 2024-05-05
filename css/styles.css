@@ -692,6 +692,34 @@ footer ul li a {
   grid-area: singer1;
 }
 
+#cat-gallery-container h1 {
+  padding: 32px 0 16px 0;
+  color: var(--blueNavy);
+  text-align: center;
+}
+#cat-gallery-container #cat-gallery {
+  padding: 0 16px 16px 16px;
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 10vh 8px 10vh 8px 10vh 8px 20vh;
+  grid-template-rows: 10vh 10vh 10vh 20vh;
+      grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4" "g5 g6 g6 g6" ". g7 g7 .";
+}
+#cat-gallery-container #cat-gallery li {
+  background-size: cover;
+  background-position: center;
+}
+#cat-gallery-container #g1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: g1;
+  background-image: url(img/cat1.JPG);
+}
+
 /* =============
     Resume
 ============= */

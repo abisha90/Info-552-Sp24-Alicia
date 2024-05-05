@@ -183,3 +183,36 @@
     }
     }
 }
+
+#cat-gallery-container{
+    h1{
+        padding: 32px 0 16px 0;
+        color: var(--blueNavy);
+        text-align: center;
+    }
+
+    #cat-gallery{
+        padding: 0 16px 16px 16px;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10vh 10vh 10vh 20vh;
+
+        grid-template-areas:
+        "g1 g1 g2 g2"
+        "g3 g3 g4 g4"
+        "g5 g6 g6 g6"
+        ". g7 g7 .";
+
+        li{
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    #g1{
+        grid-area: g1;
+        background-image: url(img/cat1.JPG);
+    }
+}
