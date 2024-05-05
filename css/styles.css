@@ -407,7 +407,7 @@ button {
 }
 
 .blueButton {
-  background-color: var(--slateBlueDark);
+  background-color: var(--blueNavy);
   color: var(--white);
   font-size: 1.125rem;
   font-weight: 800;
@@ -993,15 +993,15 @@ footer ul li a {
   border-radius: 8px;
 }
 #cw-p #sample-work {
-  margin: 0 8px 32px 8px;
+  margin: 0 8px 32px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: 8vh 8px 8vh 8px 8vh 8px 8vh 8px 32vh 8px 8vh 8px 8vh 8px 8vh;
-  grid-template-rows: 8vh 8vh 8vh 8vh 32vh 8vh 8vh 8vh;
+  -ms-grid-rows: 8vh 8px 4vh 8px 8vh 8px 4vh 8px 32vh 8px 6vh 8px 8vh 8px 6vh;
+  grid-template-rows: 8vh 4vh 8vh 4vh 32vh 6vh 8vh 6vh;
   gap: 8px;
-      grid-template-areas: "litpaper" "litpaper1";
+      grid-template-areas: "litpaper" "litpaper1" "bikeprog" "bikeprog1" "govinfo" "govinfo1" "flc-cap" "flc-cap1";
 }
 #cw-p #sample-work li {
   display: -webkit-box;
@@ -1010,6 +1010,9 @@ footer ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #cw-p #sample-work li a {
   color: var(--white);
@@ -1021,11 +1024,48 @@ footer ul li a {
   font-size: 2.5rem;
   background-color: var(--carafe);
   border-radius: 12px;
-  margin: 8px 100px;
-  padding: 8px;
+  margin: 8px 64px;
 }
 #cw-p #sample-work #litpaper1 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: litpaper1;
+}
+#cw-p #sample-work #bikeprog {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: bikeprog;
+  font-size: 2.5rem;
+  background-color: var(--carafe);
+  border-radius: 12px;
+  margin: 8px 64px;
+}
+#cw-p #sample-work #bikeprog1 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: bikeprog1;
+}
+#cw-p #sample-work #govinfo {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: govinfo;
+}
+#cw-p #sample-work #govinfo1 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: govinfo1;
+}
+#cw-p #sample-work #flc-cap {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: flc-cap;
+  font-size: 2.5rem;
+  background-color: var(--carafe);
+  border-radius: 12px;
+  margin: 8px 64px;
+}
+#cw-p #sample-work #flc-cap1 {
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  grid-area: flc-cap1;
 }

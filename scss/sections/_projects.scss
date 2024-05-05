@@ -250,19 +250,26 @@
 
     #sample-work{
 
-        margin: 0 8px 32px 8px;
+        margin: 0 8px 32px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 8vh 8vh 8vh 8vh 32vh 8vh 8vh 8vh;
+        grid-template-rows: 8vh 4vh 8vh 4vh 32vh 6vh 8vh 6vh;
         gap: 8px;
 
         grid-template-areas:
         "litpaper"
-        "litpaper1";
+        "litpaper1"
+        "bikeprog"
+        "bikeprog1"
+        "govinfo"
+        "govinfo1"
+        "flc-cap"
+        "flc-cap1";
 
         li{
             display: flex;
             justify-content: center;
+            align-items: center;
    
             a{
                 color: var(--white);
@@ -274,13 +281,43 @@
             font-size: rem-calc(40);
             background-color: var(--carafe);
             border-radius: 12px;
-            margin: 8px 100px;
-            padding: 8px;
-
+            margin: 8px 64px;
         }
 
         #litpaper1{
             grid-area: litpaper1;
+        }
+
+        #bikeprog{
+            grid-area: bikeprog;
+            font-size: rem-calc(40);
+            background-color: var(--carafe);
+            border-radius: 12px;
+            margin: 8px 64px;
+        }
+
+        #bikeprog1{
+            grid-area: bikeprog1;
+        }
+
+        #govinfo{
+            grid-area: govinfo;
+        }
+
+        #govinfo1{
+            grid-area: govinfo1;
+        }
+
+        #flc-cap{
+            grid-area: flc-cap;
+            font-size: rem-calc(40);
+            background-color: var(--carafe);
+            border-radius: 12px;
+            margin: 8px 64px;
+        }
+
+        #flc-cap1{
+            grid-area: flc-cap1;
         }
 
         // li{
