@@ -1,14 +1,23 @@
 #proforgs{
-    margin: 32px 8px;
-    text-align: center;
+
     h1{
         color: var(--blueNavy);
+        padding: 16px 8px;
+        text-align: center;
 
     }
 
     h2{
         font-style: italic;
-        padding: 8px;
+        background-color: var(--carafe);
+        text-align: center;
+        margin: 16px 0;
+        font-style: italic;
+        color: var(--white);
+    }
+
+    p{
+        margin: 0 8px;
     }
 
     button{
