@@ -717,13 +717,13 @@ footer ul li a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: g1;
+  background-image: url(img/cat2.jpeg);
 }
 #cat-gallery-container #g7 {
   -ms-grid-row: 7;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-area: g7;
-  background-image: url(../img/cat7.JPG);
 }
 
 /* =============
