@@ -6,11 +6,11 @@ button{
     border: none;
     cursor: pointer;
 }
-.blueButton{
-    background-color: var(--blueNavy);
-    color: var(--white);
+.salmonButton{
+    background-color: var(--salmon);
+    color: var(--blueNavy);
     font-size: rem-calc(18);
-    font-weight: 800;
+    font-weight: 600;
     padding: 16px 40px;
     border-radius: 8px;
     margin: auto;

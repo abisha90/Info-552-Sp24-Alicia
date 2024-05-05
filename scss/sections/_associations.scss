@@ -1,0 +1,23 @@
+#proforgs{
+    margin: 32px 8px;
+    text-align: center;
+    h1{
+        color: var(--blueNavy);
+
+    }
+
+    h2{
+        font-style: italic;
+        padding: 8px;
+    }
+
+    button{
+
+        margin: 8px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        a{
+            color: var(--blueNavy);
+        }
+    }
+}
