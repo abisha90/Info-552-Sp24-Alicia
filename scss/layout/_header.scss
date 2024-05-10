@@ -2,5 +2,48 @@
     Header
 ============= */
 header{
-    // display: none;
+    display: grid;
+    grid-template-columns: 20% auto;
+
+    grid-template-areas:
+    "logo burger"
+    "nav nav";
+
+    // padding: 16px 0 16px 16px;
+
+    @include md{
+        grid-template-columns: 30% auto;
+        grid-template-areas:
+        "logo nav" ;
+    }
+
+    #logo-container{
+        grid-area: logo;
+        padding: 16px 0 16px 16px;
+    }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include md{
+            display: none;
+        }
+
+        button{
+            background-color: var(--white);
+            border: none;
+            color: var(--blue);
+            font-size: rem-calc(18);
+            // border: 1px solid red;
+            padding: 16px;
+        }
+    }
+
+    // see _navigation.scss for styling
+    #main-nav{
+        grid-area: nav;
+    }
 }
