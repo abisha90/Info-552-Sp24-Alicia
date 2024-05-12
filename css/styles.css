@@ -350,6 +350,10 @@ ul li {
   display: none;
 }
 
+.header-padding {
+  padding-top: 90px;
+}
+
 @media (min-width: 1440px) {
   .xxl-grid {
     display: -ms-grid;
@@ -538,14 +542,19 @@ a {
 #main-nav ul li a:hover, #main-nav ul li a:active {
   color: var(--red);
 }
-#main-nav ul li a:hover i, #main-nav ul li a:active i {
-  color: var(--white);
-}
 
 /* =============
     Header
 ============= */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+header #header-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% auto;
@@ -553,19 +562,37 @@ header {
       grid-template-areas: "logo burger" "nav nav";
 }
 @media (min-width: 768px) {
-  header {
+  header #header-container {
     -ms-grid-columns: 30% auto;
     grid-template-columns: 30% auto;
         grid-template-areas: "logo nav";
   }
 }
-header #logo-container {
+@media (min-width: 1024px) {
+  header #header-container {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1200px) {
+  header #header-container {
+    -ms-grid-columns: 45% auto;
+    grid-template-columns: 45% auto;
+  }
+}
+@media (min-width: 1440px) {
+  header #header-container {
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+  }
+}
+header #header-container #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
   padding: 16px 0 16px 16px;
 }
-header #burger-container {
+header #header-container #burger-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: burger;
@@ -580,29 +607,29 @@ header #burger-container {
           align-items: center;
 }
 @media (min-width: 768px) {
-  header #burger-container {
+  header #header-container #burger-container {
     display: none;
   }
 }
-header #burger-container button {
+header #header-container #burger-container button {
   background-color: var(--white);
   border: none;
   color: var(--blue);
   font-size: 1.125rem;
   padding: 16px;
 }
-header #main-nav {
+header #header-container #main-nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
 }
 @media (min-width: 768px) {
-  header #logo-container {
+  header #header-container #logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  header #main-nav {
+  header #header-container #main-nav {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -1051,12 +1078,12 @@ footer > div ul li a {
     Views
 ============= */
 #views-hero {
-  padding: 32px 16px;
+  padding: 90px 16px 32px;
   text-align: center;
 }
 @media (min-width: 768px) {
   #views-hero {
-    padding: 32px 8vw;
+    padding: 90px 8vw 32px;
   }
 }
 #views-hero h1 {
@@ -1235,7 +1262,7 @@ footer > div ul li a {
     Contact
 ============= */
 #contact-hero {
-  padding: 32px 16px;
+  padding: 90px 16px 32px;
   text-align: center;
 }
 
