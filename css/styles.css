@@ -338,6 +338,10 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -496,6 +500,15 @@ a {
   text-decoration: none;
 }
 
+.hide-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hide-menu {
+    display: block;
+  }
+}
+
 #main-nav {
   background-color: var(--blueDark);
   padding: 16px;
@@ -504,6 +517,7 @@ a {
   #main-nav {
     background-color: var(--white);
     padding: 0px 16px 0px 0px;
+    display: block;
   }
 }
 @media (min-width: 768px) {
