@@ -1,0 +1,36 @@
+/* =============
+    Contact
+============= */
+
+#contact-me{
+    text-align: center;
+
+    h1{
+    padding: 16px 0 16px 0;
+    color: var(--blueNavy);
+
+}
+
+.salmonButton{
+
+    margin: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    a{
+        color: var(--blueNavy);
+    }
+}
+}
+
+#goodbye{
+
+    text-align: center;
+
+    h2{
+        background-color: var(--blueMisty);
+        margin: 16px 0px 16px 0px;
+        color: var(--black);
+        font-style: italic;
+
+    }
+}
