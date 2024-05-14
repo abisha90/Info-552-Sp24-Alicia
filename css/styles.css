@@ -412,6 +412,55 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+header #header-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto;
+  grid-template-columns: 10% auto;
+      grid-template-areas: "home burger" "nav nav";
+}
+header #home-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: home;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  background-color: var(--black);
+}
+header #home-container a {
+  color: var(--white);
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: burger;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #burger-container button {
+  background-color: var(--black);
+  border-radius: 6px;
+  color: var(--white);
+  font-size: 1.125rem;
+  padding: 8px;
+}
+
 /* =============
     Footer
 ============= */

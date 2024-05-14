@@ -2,18 +2,48 @@
     Header
 ============= */
 
-// header{
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     width: 100%;
-//     background-color: var(--white);
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--white);
 
-//     #header-container{
-//         display: grid;
-//         grid-template-columns: 20% auto;
+    #header-container{
+        display: grid;
+        grid-template-columns: 10% auto;
     
-//         grid-template-areas:
-//         "logo burger"
-//         "nav nav";
+        grid-template-areas:
+        "home burger"
+        "nav nav";
+    }
+
+    #home-container{
+        grid-area: home;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: rem-calc(18);
+        background-color: var(--black);
+        a{
+            color: var(--white);
+        }
+
+    }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        button{
+            background-color: var(--black);
+            border-radius: 6px;
+            color: var(--white);
+            font-size: rem-calc(18);
+            padding: 8px;
+        }
+    }
+}    
+
