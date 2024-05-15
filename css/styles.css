@@ -349,6 +349,10 @@ ul li {
   display: none;
 }
 
+.header-padding {
+  padding-top: 90px;
+}
+
 /* =============
     Typography
 ============= */
