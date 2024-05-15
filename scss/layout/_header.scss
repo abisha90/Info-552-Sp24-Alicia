@@ -12,7 +12,7 @@ header{
 
     #header-container{
         display: grid;
-        grid-template-columns: 10% auto;
+        grid-template-columns: 20% auto;
     
         grid-template-areas:
         "home burger"
@@ -21,12 +21,11 @@ header{
 
     #home-container{
         grid-area: home;
+        font-size: rem-calc(22);
+        background-color: var(--white);
         padding: 8px;
-        border-radius: 6px;
-        font-size: rem-calc(18);
-        background-color: var(--black);
         a{
-            color: var(--white);
+            color: var(--black);
         }
 
     }

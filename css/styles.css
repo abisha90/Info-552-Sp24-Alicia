@@ -423,21 +423,20 @@ header {
 header #header-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% auto;
-  grid-template-columns: 10% auto;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
       grid-template-areas: "home burger" "nav nav";
 }
 header #home-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: home;
+  font-size: 1.375rem;
+  background-color: var(--white);
   padding: 8px;
-  border-radius: 6px;
-  font-size: 1.125rem;
-  background-color: var(--black);
 }
 header #home-container a {
-  color: var(--white);
+  color: var(--black);
 }
 header #burger-container {
   -ms-grid-row: 1;
