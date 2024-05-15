@@ -8,10 +8,17 @@
 
     h1{
         color: var(--blueNavy);
+        padding-bottom: 16px;
     }
 
     p{
         padding: 16px;
+    }
+
+    #powers-quote{
+        background-color: var(--carafe);
+        border-radius: 8px;
+        color: var(--white);
     }
 
 

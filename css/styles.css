@@ -350,7 +350,12 @@ ul li {
 }
 
 .header-padding {
-  padding-top: 90px;
+  padding-top: 80px;
+}
+@media (min-width: 768px) {
+  .header-padding {
+    padding-top: 180px;
+  }
 }
 
 /* =============
@@ -481,13 +486,14 @@ header #burger-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 8px;
 }
 header #burger-container button {
   background-color: var(--blueMisty);
   border-radius: 6px;
   color: var(--white);
   font-size: 1.125rem;
-  padding: 8px;
+  padding: 6px;
 }
 header #main-nav {
   -ms-grid-row: 2;
@@ -532,9 +538,15 @@ footer ul li a {
 }
 #index-philosophy h1 {
   color: var(--blueNavy);
+  padding-bottom: 16px;
 }
 #index-philosophy p {
   padding: 16px;
+}
+#index-philosophy #powers-quote {
+  background-color: var(--carafe);
+  border-radius: 8px;
+  color: var(--white);
 }
 #index-philosophy #index-philosophy-image {
   height: 70vh;

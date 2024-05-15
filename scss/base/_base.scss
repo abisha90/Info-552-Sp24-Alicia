@@ -15,5 +15,9 @@ ul{
 }
 
 .header-padding{
-    padding-top: 90px;
+    padding-top: 80px;
+
+    @include md{
+        padding-top: 180px;
+    }
 }
