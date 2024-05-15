@@ -409,6 +409,23 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+a i {
+  color: var(--blueMisty);
+}
+
+#main-nav {
+  background-color: var(--blueNavy);
+  padding: 16px;
+  line-height: 1.5;
+}
+#main-nav ul li {
+  text-align: right;
+}
+
 /* =============
     Header
 ============= */
@@ -436,7 +453,7 @@ header #home-container {
   padding: 8px;
 }
 header #home-container a {
-  color: var(--black);
+  color: var(--blueMisty);
 }
 header #burger-container {
   -ms-grid-row: 1;
@@ -453,11 +470,17 @@ header #burger-container {
           align-items: center;
 }
 header #burger-container button {
-  background-color: var(--black);
+  background-color: var(--blueMisty);
   border-radius: 6px;
   color: var(--white);
   font-size: 1.125rem;
   padding: 8px;
+}
+header #main-nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
 }
 
 /* =============
@@ -472,8 +495,8 @@ footer {
   height: 50vh;
 }
 footer ul {
-  padding: 32px 6vw 16px;
-  background-color: var(--black);
+  padding: 16px;
+  background-color: var(--blueNavy);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,7 +506,7 @@ footer ul {
 }
 footer ul li a {
   color: var(--white);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   text-decoration: none;
 }
 
