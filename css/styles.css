@@ -417,6 +417,15 @@ a i {
   color: var(--blueMisty);
 }
 
+.hide-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hide-menu {
+    display: block;
+  }
+}
+
 #main-nav {
   background-color: var(--blueNavy);
   padding: 16px;
@@ -514,7 +523,7 @@ footer ul li a {
     Index
 ============= */
 #index-philosophy {
-  margin: 32px 8px;
+  margin: 64px 8px;
   text-align: center;
 }
 #index-philosophy h1 {
