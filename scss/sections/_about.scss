@@ -20,6 +20,12 @@
         "bio2 bio2"
         "bio3 bio3"
         "bio4 bio4";
+
+        @include md{
+            grid-template-areas:
+            "bio 1 bio 2"
+            "bio 3 bio 4";
+        }
     }
 
     li{

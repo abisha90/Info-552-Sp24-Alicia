@@ -419,6 +419,7 @@ a {
 }
 a i {
   color: var(--blueMisty);
+  padding-right: 6px;
 }
 
 .hide-menu {
@@ -545,6 +546,11 @@ footer ul li a {
   margin: 64px 8px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #index-philosophy {
+    margin: 64px 64px;
+  }
+}
 #index-philosophy h1 {
   color: var(--blueNavy);
   padding-bottom: 16px;
@@ -586,6 +592,11 @@ footer ul li a {
   grid-template-rows: 8vh 8vh 8vh 12vh;
   gap: 8px;
       grid-template-areas: "bio1 bio1" "bio2 bio2" "bio3 bio3" "bio4 bio4";
+}
+@media (min-width: 768px) {
+  #about-me ul {
+        grid-template-areas: "bio 1 bio 2" "bio 3 bio 4";
+  }
 }
 #about-me li {
   display: -webkit-box;
@@ -893,7 +904,7 @@ footer ul li a {
   font-style: italic;
 }
 #cw-p #course-list {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   margin-left: 8px;
   display: -ms-grid;
   display: grid;
@@ -1162,7 +1173,7 @@ footer ul li a {
       -ms-flex-align: center;
           align-items: center;
 }
-#cw-p #sample-work li a {
+#cw-p #sample-work li a i {
   color: var(--white);
 }
 #cw-p #sample-work #litpaper {
