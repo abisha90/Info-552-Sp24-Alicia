@@ -479,8 +479,8 @@ header #home-container {
   background-color: var(--white);
   padding: 8px;
 }
-header #home-container a {
-  color: var(--blueMisty);
+header #home-container a i {
+  color: var(--blueNavy);
 }
 header #burger-container {
   -ms-grid-row: 1;
@@ -498,7 +498,7 @@ header #burger-container {
   padding-right: 8px;
 }
 header #burger-container button {
-  background-color: var(--blueMisty);
+  background-color: var(--blueNavy);
   border-radius: 6px;
   color: var(--white);
   font-size: 1.125rem;
@@ -849,7 +849,7 @@ footer ul li a {
 #my-resume h1 {
   color: var(--blueNavy);
   text-align: center;
-  padding-bottom: 16px;
+  padding: 16px 0 16px 0;
 }
 #my-resume a {
   display: -webkit-box;

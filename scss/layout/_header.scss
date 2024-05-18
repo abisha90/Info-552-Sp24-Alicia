@@ -25,7 +25,9 @@ header{
         background-color: var(--white);
         padding: 8px;
         a{
-            color: var(--blueMisty);
+            i{
+                color: var(--blueNavy);
+            }
         }
 
     }
@@ -38,7 +40,7 @@ header{
         padding-right: 8px;
 
         button{
-            background-color: var(--blueMisty);
+            background-color: var(--blueNavy);
             border-radius: 6px;
             color: var(--white);
             font-size: rem-calc(18);
