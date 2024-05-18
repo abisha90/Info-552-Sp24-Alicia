@@ -22,9 +22,15 @@
         "bio4 bio4";
 
         @include md{
+
+            margin: 8px 64px;
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 8vh 12vh;
+
             grid-template-areas:
-            "bio 1 bio 2"
-            "bio 3 bio 4";
+            "bio1 bio3"
+            "bio2 bio4";
         }
     }
 
@@ -54,6 +60,11 @@
         background-color: var(--salmon);
         font-style: italic;
         border-radius: 8px;
+
+        @include md{
+            background-color: var(--blueMisty);
+
+        }
     }
 
     #bio4{
@@ -61,6 +72,11 @@
         background-color: var(--blueMisty);
         font-style: italic;
         border-radius: 8px;
+
+        @include md{
+            background-color: var(--salmon);
+
+        }
     }
 
 }
@@ -90,6 +106,23 @@
         "flp flp1"
         "ccd ccd1"
         "singer singer1";
+
+        @include md{
+
+            margin: 8px 64px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 8vh 4vh 8vh 4vh 8vh 4vh 8vh 4vh;
+
+            grid-template-areas:
+            "acsm msm"
+            "acsm1 msm1"
+            "bpo dcci"
+            "bpo1 dcci1"
+            "dal flp"
+            "dal1 flp1"
+            "ccd singer"
+            "ccd1 singer1";
+        }
 
     li{
         display: flex;
@@ -127,6 +160,11 @@
         color: var(--white);
         background-color: var(--carafe);
         border-radius: 8px;
+
+        @include md{
+            background-color: var(--blueNavy);
+
+        }
     }
 
     #bpo1{
@@ -138,6 +176,11 @@
         color: var(--white);
         background-color: var(--blueNavy);
         border-radius: 8px;
+
+        @include md{
+            background-color: var(--carafe);
+
+        }
     }
 
     #dcci1{
@@ -149,6 +192,7 @@
         color: var(--white);
         background-color: var(--carafe);
         border-radius: 8px;
+
     }
 
     #dal1{
@@ -160,6 +204,7 @@
         color: var(--white);
         background-color: var(--blueNavy);
         border-radius: 8px;
+
     }
 
     #flp1{
@@ -171,6 +216,10 @@
         color: var(--white);
         background-color: var(--carafe);
         border-radius: 8px;
+
+        @include md{
+            background-color: var(--blueNavy);
+        }
     }
 
     #ccd1{
@@ -182,6 +231,10 @@
         color: var(--white);
         background-color: var(--blueNavy);
         border-radius: 8px;
+
+        @include md{
+            background-color: var(--carafe);
+        }
     }
 
     #singer1{

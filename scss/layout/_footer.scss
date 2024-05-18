@@ -14,11 +14,19 @@ footer{
     // justify-content: center;
     // align-items: flex-end;
 
+    h2{
+        padding-bottom: 16px;
+    }
+
     ul{
         padding: 16px;
         background-color: var(--blueNavy);
         display: flex;
         justify-content: space-between;
+
+        @include md{
+            padding: 16px 72px;
+        }
 
         li{
             a{
