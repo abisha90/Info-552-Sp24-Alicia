@@ -22,6 +22,19 @@
 }
 }
 
+#contact-goodbye-image{
+    height: 70vh;
+    background-image: url('../img/Phonebooth.jpg');
+    background-size: cover;
+    // x = right | center | left
+    // y = top | center | bottom
+    background-position: center;
+
+    @include md{
+        height: 60vh;
+    }
+}
+
 #goodbye{
 
     text-align: center;

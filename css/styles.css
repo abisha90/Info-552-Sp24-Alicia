@@ -1414,6 +1414,18 @@ footer ul li a {
   color: var(--blueNavy);
 }
 
+#contact-goodbye-image {
+  height: 70vh;
+  background-image: url("../img/Phonebooth.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #contact-goodbye-image {
+    height: 60vh;
+  }
+}
+
 #goodbye {
   text-align: center;
 }
